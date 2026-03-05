@@ -1,0 +1,44 @@
+.logo-container {
+    position: fixed;
+    top: 120px; 
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    transition: all 0.4s ease;
+    z-index: 1000;
+    opacity: 0;
+    animation: logoFade 0.8s ease forwards;
+}
+
+
+
+.logo-container img {
+    border-radius: 20px;
+    width: 160px;
+    transform: translateY(15px);
+    animation: logoUp 0.8s ease forwards;
+}
+
+.logo-container.scrolled {
+    top: -35px;
+    left: -40px;
+    transform: translateX(0) scale(0.3);
+}
+
+
+@keyframes logoFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes logoUp {
+  from {
+    transform: translateY(15px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
