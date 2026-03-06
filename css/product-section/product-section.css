@@ -30,11 +30,11 @@
     box-shadow: 0 10px 25px #6111189f;;
     overflow: hidden;
     border-radius: 20px;
-    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    transition: transform 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 .product-section-card:hover {
-    box-shadow: 0 18px 40px #770912b0;
+    box-shadow: 0 18px 35px #770912b0;
 }
 
 .product-section-card-img-container {

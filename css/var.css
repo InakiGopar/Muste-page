@@ -1,10 +1,13 @@
 :root {
     --main-color: #5e2a2e;
+    --main-color-darker: #4A2226;
     --main-color-hover: #32070A;
 
     --red-color: #DE373D;
 
     --grey-color: #4A5565;
+
+    --orange-color: #B36B37;
     
     --grey-light-color: #F9FAFB;
 }

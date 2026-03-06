@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- head icon -->
+         <link rel="icon" href="./assets/logo-muste.png">
+
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,6 +20,9 @@
         <link rel="stylesheet" href="./css/hero/hero.css">
         <link rel="stylesheet" href="./css/about-section/about-section.css">
         <link rel="stylesheet" href="./css/product-section/product-section.css">
+        <link rel="stylesheet" href="./css/footer/footer.css">
+        <link rel="stylesheet" href="./css/scroll-reveal.css">
+
         <title>Muste outdoor</title>
     </head>
     <body>
@@ -70,10 +76,12 @@
 
         <!--about-->
         <section class="about-section">
-            <h2>Sobre Muste</h2>
-            <p class="presentation">Un estudio dedicado a revolucionar la experiencia outdoor</p>
 
-            <div class="about-section-card">
+            <h2 class="reveal">Sobre Muste</h2>
+
+            <p class="presentation reveal">Un estudio dedicado a revolucionar la experiencia outdoor</p>
+
+            <div class="about-section-card reveal">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#5e2a2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 3l4 8l5-5l5 15H2z"/></svg>
                 <h4>Diseño funcional</h4>
                 <p>
@@ -81,7 +89,7 @@
                 </p>
             </div>
 
-            <div class="about-section-card">
+            <div class="about-section-card reveal">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="#5e2a2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76l-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></g></svg>
                 <h4>Inovación</h4>
                 <p>
@@ -89,7 +97,7 @@
                 </p>
             </div>
 
-            <div class="about-section-card">
+            <div class="about-section-card reveal">
                 <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path fill="none" stroke="#5e2a2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 17h7l-4.5-6.5h3L12 3l-5.5 7.5h3L5 17zm0 0v4"/></svg>
                 <h4>Sotenibilidad</h4>
                 <p>
@@ -98,7 +106,7 @@
             </div>
 
 
-            <p>
+            <p class="reveal">
                 En Muste Outdoor, creemos que cada aventura merece equipamiento excepcional. Con más de 10 años de experiencia en diseño de productos outdoor,
                 hemos desarrollado soluciones innovadoras que combinan funcionalidad extrema con diseño atemporal.
                 Desde mochilas ergonómicas hasta equipamiento de camping de alta tecnología, cada producto que creamos
@@ -108,12 +116,14 @@
 
         <!--products-->
         <section class="products-section">
-            <h2>Nuestros productos</h2>
-            <p class="presentation">
+
+            <h2 class="reveal">Nuestros productos</h2>
+
+            <p class="presentation reveal">
                 Diseños que transforman aventuras en experiencias inolvidables
             </p>
 
-            <div class="product-section-card">
+            <div class="product-section-card reveal-container">
 
                 <figure class="product-section-card-img-container">
                     <img src="./assets/muste-mock-product1.png" alt="Serie Alpine Pro img" srcset="">
@@ -135,7 +145,7 @@
                 </div>
             </div>
 
-            <div class="product-section-card">
+            <div class="product-section-card reveal-container">
                 <figure class="product-section-card-img-container">
                     <img src="./assets/muste-mock-product2.png" alt="Camp Comfort img" srcset="">
                 </figure>
@@ -157,7 +167,7 @@
             
             </div>
 
-            <div class="product-section-card">
+            <div class="product-section-card reveal-container">
                 <figure class="product-section-card-img-container">
                     <img src="./assets/muste-mock-product3.png" alt="Urban Explorer img" srcset="">
                 </figure>
@@ -181,8 +191,70 @@
 
         </section>
 
+        <footer>
+
+            <h3 class="reveal">Contáctanos</h3>
+
+            <p class="presentation reveal">¿Tienes un proyecto en mente? Trabajemos juntos</p>
+
+            <div class="means-of-contact-container">
+
+                <div class="reveal-container">
+                    <!-- Email icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                        <path fill="#B36B37" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 14H4V8l8 5l8-5zm-8-7L4 6h16z"/>
+                    </svg>
+                    <h4>Email</h4>
+                    <p>infomuste@gmail.com</p>
+                </div>
+
+                <div class="reveal-container">
+                    <!-- Phone icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#B36B37" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.6 14.522c-2.395 2.52-8.504-3.534-6.1-6.064c1.468-1.545-.19-3.31-1.108-4.609c-1.723-2.435-5.504.927-5.39 3.066c.363 6.746 7.66 14.74 14.726 14.042c2.21-.218 4.75-4.21 2.215-5.669c-1.268-.73-3.009-2.17-4.343-.767"/>
+                    </svg>
+
+                    <h4>Telefono</h4>
+                    <p>+54 11 1234-5678</p>
+                </div>
+
+                <div class="reveal-container">
+                    <!-- Location icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                        <path fill="#B36B37" d="M13.413 11.413Q14 10.825 14 10t-.587-1.412T12 8t-1.412.588T10 10t.588 1.413T12 12t1.413-.587M12 19.35q3.05-2.8 4.525-5.087T18 10.2q0-2.725-1.737-4.462T12 4T7.738 5.738T6 10.2q0 1.775 1.475 4.063T12 19.35M12 22q-4.025-3.425-6.012-6.362T4 10.2q0-3.75 2.413-5.975T12 2t5.588 2.225T20 10.2q0 2.5-1.987 5.438T12 22m0-12"/>
+                    </svg>
+
+                    <h4>Ubicaión</h4>
+                    <p>Tandil, Buenos Aires</p>
+                </div>
+            </div>
+
+            <div class="social-media-container">
+                <figure class="reveal">
+                    <!-- Instagram icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
+                        <path fill="#fff" fill-rule="evenodd" d="M7.465 1.066C8.638 1.012 9.012 1 12 1s3.362.013 4.534.066s1.972.24 2.672.511c.733.277 1.398.71 1.948 1.27c.56.549.992 1.213 1.268 1.947c.272.7.458 1.5.512 2.67C22.988 8.639 23 9.013 23 12s-.013 3.362-.066 4.535c-.053 1.17-.24 1.97-.512 2.67a5.4 5.4 0 0 1-1.268 1.949c-.55.56-1.215.992-1.948 1.268c-.7.272-1.5.458-2.67.512c-1.174.054-1.548.066-4.536.066s-3.362-.013-4.535-.066c-1.17-.053-1.97-.24-2.67-.512a5.4 5.4 0 0 1-1.949-1.268a5.4 5.4 0 0 1-1.269-1.948c-.271-.7-.457-1.5-.511-2.67C1.012 15.361 1 14.987 1 12s.013-3.362.066-4.534s.24-1.972.511-2.672a5.4 5.4 0 0 1 1.27-1.948a5.4 5.4 0 0 1 1.947-1.269c.7-.271 1.5-.457 2.67-.511m8.98 1.98c-1.16-.053-1.508-.064-4.445-.064s-3.285.011-4.445.064c-1.073.049-1.655.228-2.043.379c-.513.2-.88.437-1.265.822a3.4 3.4 0 0 0-.822 1.265c-.151.388-.33.97-.379 2.043c-.053 1.16-.064 1.508-.064 4.445s.011 3.285.064 4.445c.049 1.073.228 1.655.379 2.043c.176.477.457.91.822 1.265c.355.365.788.646 1.265.822c.388.151.97.33 2.043.379c1.16.053 1.507.064 4.445.064s3.285-.011 4.445-.064c1.073-.049 1.655-.228 2.043-.379c.513-.2.88-.437 1.265-.822c.365-.355.646-.788.822-1.265c.151-.388.33-.97.379-2.043c.053-1.16.064-1.508.064-4.445s-.011-3.285-.064-4.445c-.049-1.073-.228-1.655-.379-2.043c-.2-.513-.437-.88-.822-1.265a3.4 3.4 0 0 0-1.265-.822c-.388-.151-.97-.33-2.043-.379m-5.85 12.345a3.669 3.669 0 0 0 4-5.986a3.67 3.67 0 1 0-4 5.986M8.002 8.002a5.654 5.654 0 1 1 7.996 7.996a5.654 5.654 0 0 1-7.996-7.996m10.906-.814a1.337 1.337 0 1 0-1.89-1.89a1.337 1.337 0 0 0 1.89 1.89" clip-rule="evenodd"/>
+                    </svg>
+                </figure>
+
+                <!-- Muste icon -->
+                <figure class="footer-muste-icon reveal"></figure>
+
+                <figure class="reveal">
+                    <!-- LinkedIn icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
+                        <path fill="#fff" fill-rule="evenodd" d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02c3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461c-1.889 0-2.674 1.345-2.674 3.46V22h-4zM2.57 21.83h4V8.799h-4zM7.143 4.55a2.53 2.53 0 0 1-.753 1.802a2.57 2.57 0 0 1-1.82.748a2.6 2.6 0 0 1-1.818-.747A2.55 2.55 0 0 1 2 4.55c0-.677.27-1.325.753-1.803A2.58 2.58 0 0 1 4.571 2c.682 0 1.336.269 1.819.747s.753 1.126.753 1.803" clip-rule="evenodd"/>
+                    </svg>
+                </figure>
+            </div>
+
+            <p class="copyright-text">&copy; 2026 Muste. Todos los derechos reservados.</p>
+            
+        </footer>
+
 
         
         <script src="./js/header/header.js"></script>
+        <script src="./js/scrollReveal.js"></script>
     </body>
 </html>
