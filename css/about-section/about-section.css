@@ -19,7 +19,7 @@
     color: var(--grey-color);
 }
 
-.presentation {
+.about-section .presentation {
     font-weight: 700;
 }
 
@@ -52,3 +52,48 @@
 .about-section-card:hover {
     border: 1px solid var(--main-color);
 }
+
+
+/*When the width of the screen is greater than or equal to 768px (tablet size)*/
+@media (min-width: 768px) {
+
+    .about-section h2 {
+        font-size: 3rem;
+    }
+
+    .about-section-card h4 {
+        font-size: 1.5rem;
+    }
+
+    .about-section p {
+        font-size: 1.5rem;
+    }
+
+    .about-section-card svg {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/*When the width of the screen is greater than or equal to 1024px (desktop size)*/
+@media (min-width: 1024px) {
+
+    .about-section {
+        height: 100vh;
+    }
+
+    .about-section-cards-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .about-section-card {
+        height: 250px;
+    }
+
+    .about-section p {
+        font-size: 1.2rem;
+    }
+}
+

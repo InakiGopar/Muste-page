@@ -144,4 +144,80 @@
   }
 }
 
+/* When the width of the screen is less than 384px (fix specific responsive problems related to hero buttons layout) */
+@media (max-width: 384px) {
+
+  .hero-section-button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  } 
+
+  .hero-section-arrow-container {
+    margin-top: 50px;
+  }
+}
+
+/* When the height of the screen is less than 700px or width is less than 384px (fix specific responsive problems) */
+@media ((max-height: 700px) or (max-width: 384px)) {
+
+  .hero-section {
+    height: auto; 
+  }
+}
+
+/*When the width of the screen is greater than or equal to 768px (tablet size)*/
+@media (min-width: 768px) {
+  
+  .hero-section h2 {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .typewriter {
+    display: flex;
+    justify-content: end;
+  }
+
+  .hero-section p {
+    font-size: 1.3em;
+  }
+}
+
+
+/*When the width of the screen is greater than or equal to 1024px (desktop size)*/
+@media (min-width: 1024px) {
+  
+  
+  .hero-section h2 {
+    font-size: 3.5rem;
+        margin-top: 280px;
+  }
+
+  .hero-section p {
+    font-size: 1.5em;
+  }
+
+  .hero-section-button {
+    width: 200px;
+    height: 80px;
+    font-size: 1.5em;
+  }
+
+  .hero-section-arrow-container {
+      margin-top: 70px;
+  }
+
+  .hero-section-arrow-container svg {
+      width: 70px;
+      height: 70px;
+  }
+}
+
+
+
+
+
 

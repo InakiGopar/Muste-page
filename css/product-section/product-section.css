@@ -18,8 +18,14 @@
     color: var(--grey-color);
 }
 
-.presentation {
+.products-section .presentation {
     font-weight: 700;
+}
+
+.product-section-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
 .product-section-card {
@@ -83,4 +89,35 @@
     background-color: var(--red-color);
     padding: 2%;
     border-radius: 10px;
+}
+
+
+/*When the width of the screen is greater than or equal to 768px (tablet size)*/
+@media (min-width: 768px) {
+
+    .products-section h2 {
+        font-size: 3rem;
+    }
+
+    .products-section .presentation {
+        font-size: 1.5rem;
+    }
+
+    .product-section-cards-container{
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .product-section-card {
+        width: 350px;
+    }
+
+}
+
+/*When the width of the screen is greater than or equal to 1024px (desktop size)*/
+@media (min-width: 1024px) {
+    .products-section {
+        padding-bottom: 10%;
+    }
 }

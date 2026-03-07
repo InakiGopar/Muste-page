@@ -27,16 +27,29 @@
     </head>
     <body>
         <header id="id-header">
-            <svg xmlns="http://www.w3.org/2000/svg" class="hamburger-menu-icon" viewBox="0 0 24 24"><path fill="#fff" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="hamburger-menu-icon" viewBox="0 0 24 24">
+                <path fill="#fff" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/>
+            </svg>
+             <!-- Desktop menu -->
+            <nav class="desktop-menu">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#servicio">Servicio</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
         </header>
 
+        <!-- Mobile menu -->
         <nav class="mobile-menu">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Servicio</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#servicio">Servicio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
 
@@ -57,21 +70,27 @@
                     combinando funcionalidad, estética, durabilidad y diseño excepcional
                 </p>
 
-                <div class="hero-section-button-container">
+                <div class="hero-section-bottom">
+                    
+                    <div class="hero-section-button-container">
 
-                    <button class="hero-section-button products">
-                        <a href="#">Ver productos</a>
-                    </button>
+                        <button class="hero-section-button products">
+                            <a href="#">Ver productos</a>
+                        </button>
 
-                    <button class="hero-section-button contact">
-                        <a href="#">Contacto</a>
-                    </button>
+                        <button class="hero-section-button contact">
+                            <a href="#">Contacto</a>
+                        </button>
+                    </div>
 
                     <div class="hero-section-arrow-container">
-                        <svg id="scroll-indicator" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24"><path fill="#B09C9C" d="M11 14.2V6q0-.425.288-.712T12 5t.713.288T13 6v8.2l2.9-2.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-4.6 4.6q-.3.3-.7.3t-.7-.3l-4.6-4.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"/></svg>
+                        <svg id="scroll-indicator" xmlns="http://www.w3.org/2000/svg" width="55" height="55" viewBox="0 0 24 24">
+                            <path fill="#B09C9C" d="M11 14.2V6q0-.425.288-.712T12 5t.713.288T13 6v8.2l2.9-2.9q.275-.275.7-.275t.7.275t.275.7t-.275.7l-4.6 4.6q-.3.3-.7.3t-.7-.3l-4.6-4.6q-.275-.275-.275-.7t.275-.7t.7-.275t.7.275z"/>
+                        </svg>
                     </div>
 
                 </div>
+               
         </section>
 
         <!--about-->
@@ -81,30 +100,50 @@
 
             <p class="presentation reveal">Un estudio dedicado a revolucionar la experiencia outdoor</p>
 
-            <div class="about-section-card reveal">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#5e2a2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 3l4 8l5-5l5 15H2z"/></svg>
-                <h4>Diseño funcional</h4>
-                <p>
-                    Productos diseñados para resistir las condiciones más extremas sin comprometer el estilo
-                </p>
+            <div class="about-section-cards-container">
+
+                <div class="about-section-card reveal">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#5e2a2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 3l4 8l5-5l5 15H2z"/>
+                    </svg>
+
+                    <h4>Diseño funcional</h4>
+                    <p>
+                        Productos diseñados para resistir las condiciones más extremas sin comprometer el estilo
+                    </p>
+                </div>
+
+                <div class="about-section-card reveal">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" stroke="#5e2a2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="m16.24 7.76l-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/>
+                        </g>
+                    </svg>
+
+                    <h4>Inovación</h4>
+                    <p>
+                        Investigación constante para ofrecer soluciones innovadoras que mejoren la experiencia outdoor
+                    </p>
+                </div>
+
+                <div class="about-section-card reveal">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
+                        <path fill="none" stroke="#5e2a2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 17h7l-4.5-6.5h3L12 3l-5.5 7.5h3L5 17zm0 0v4"/>
+                    </svg>
+
+                    <h4>Sostenibilidad</h4>
+                    <p>
+                        Compromiso con materiales ecológicos y procesos de producción responsables
+                    </p>
+                </div>
+
             </div>
 
-            <div class="about-section-card reveal">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" stroke="#5e2a2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="m16.24 7.76l-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"/></g></svg>
-                <h4>Inovación</h4>
-                <p>
-                    Investigación constante para ofrecer soluciones innovadoras que mejoren la experiencia outdoor
-                </p>
-            </div>
-
-            <div class="about-section-card reveal">
-                <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24"><path fill="none" stroke="#5e2a2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 17h7l-4.5-6.5h3L12 3l-5.5 7.5h3L5 17zm0 0v4"/></svg>
-                <h4>Sotenibilidad</h4>
-                <p>
-                    Compromiso con materiales ecológicos y procesos de producción responsables
-                </p>
-            </div>
-
+            
 
             <p class="reveal">
                 En Muste Outdoor, creemos que cada aventura merece equipamiento excepcional. Con más de 10 años de experiencia en diseño de productos outdoor,
@@ -112,6 +151,7 @@
                 Desde mochilas ergonómicas hasta equipamiento de camping de alta tecnología, cada producto que creamos
                 es el resultado de investigación exhaustiva, pruebas en condiciones reales y un compromiso inquebrantable con la calidad y la sostenibilidad.
             </p>
+            
         </section>
 
         <!--products-->
@@ -123,78 +163,73 @@
                 Diseños que transforman aventuras en experiencias inolvidables
             </p>
 
-            <div class="product-section-card reveal-container">
+            <div class="product-section-cards-container">
 
-                <figure class="product-section-card-img-container">
-                    <img src="./assets/muste-mock-product1.png" alt="Serie Alpine Pro img" srcset="">
-                </figure>
+                <div class="product-section-card reveal-container">
 
-                <div class="product-section-card-content">
-                    <h4>Serie Alpine Pro</h4>
-                    <p>
-                        Línea completa de mochilas técnicas diseñadas para montañismo y trekking de alta montaña
-                    </p>
+                    <figure class="product-section-card-img-container">
+                        <img src="./assets/muste-mock-product1.png" alt="Serie Alpine Pro img" srcset="">
+                    </figure>
 
-                    <div class="product-section-card-content-tag-container">
-                        <span class="product-section-card-content-tag">Mochilas</span>
-                        <span class="product-section-card-content-tag">Montañismo</span>
-                        <span class="product-section-card-content-tag">Premium</span>
+                    <div class="product-section-card-content">
+                        <h4>Serie Alpine Pro</h4>
+                        <p>
+                            Línea completa de mochilas técnicas diseñadas para montañismo y trekking de alta montaña
+                        </p>
 
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="product-section-card reveal-container">
-                <figure class="product-section-card-img-container">
-                    <img src="./assets/muste-mock-product2.png" alt="Camp Comfort img" srcset="">
-                </figure>
-
-                <div class="product-section-card-content">
-                    <h4>Camp Comfort</h4>
-                    <p>
-                        Sistema modular de equipamiento para camping con diseño compacto y ultraligero
-                    </p>
-
-                    <div class="product-section-card-content-tag-container">
-                        <span class="product-section-card-content-tag">Camping</span>
-                        <span class="product-section-card-content-tag">Modular</span>
-                        <span class="product-section-card-content-tag">Ultraligero</span>
-
-                    </div>
-
-                </div>
-            
-            </div>
-
-            <div class="product-section-card reveal-container">
-                <figure class="product-section-card-img-container">
-                    <img src="./assets/muste-mock-product3.png" alt="Urban Explorer img" srcset="">
-                </figure>
-
-                <div class="product-section-card-content">
-                    <h4>Urban Explorer</h4>
-                    <p>
-                        Colección urbana que combina estilo urbano con funcionalidad outdoor para el día a día
-                    </p>
-
-                    <div class="product-section-card-content-tag-container">
-                        <span class="product-section-card-content-tag">Urbano</span>
-                        <span class="product-section-card-content-tag">Versátil</span>
-                        <span class="product-section-card-content-tag">Estilo</span>
-
+                        <div class="product-section-card-content-tag-container">
+                            <span class="product-section-card-content-tag">Mochilas</span>
+                            <span class="product-section-card-content-tag">Montañismo</span>
+                            <span class="product-section-card-content-tag">Premium</span>
+                        </div>
                     </div>
 
                 </div>
 
-            </div>
+                <div class="product-section-card reveal-container">
+                    <figure class="product-section-card-img-container">
+                        <img src="./assets/muste-mock-product2.png" alt="Camp Comfort img" srcset="">
+                    </figure>
 
+                    <div class="product-section-card-content">
+                        <h4>Camp Comfort</h4>
+                        <p>
+                            Sistema modular de equipamiento para camping con diseño compacto y ultraligero
+                        </p>
+
+                        <div class="product-section-card-content-tag-container">
+                            <span class="product-section-card-content-tag">Camping</span>
+                            <span class="product-section-card-content-tag">Modular</span>
+                            <span class="product-section-card-content-tag">Ultraligero</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-section-card reveal-container">
+                    <figure class="product-section-card-img-container">
+                        <img src="./assets/muste-mock-product3.png" alt="Urban Explorer img" srcset="">
+                    </figure>
+
+                    <div class="product-section-card-content">
+                        <h4>Urban Explorer</h4>
+                        <p>
+                            Colección urbana que combina estilo urbano con funcionalidad outdoor para el día a día
+                        </p>
+
+                        <div class="product-section-card-content-tag-container">
+                            <span class="product-section-card-content-tag">Urbano</span>
+                            <span class="product-section-card-content-tag">Versátil</span>
+                            <span class="product-section-card-content-tag">Estilo</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </section>
 
         <footer>
 
             <h3 class="reveal">Contáctanos</h3>
-
             <p class="presentation reveal">¿Tienes un proyecto en mente? Trabajemos juntos</p>
 
             <div class="means-of-contact-container">
@@ -227,9 +262,11 @@
                     <h4>Ubicaión</h4>
                     <p>Tandil, Buenos Aires</p>
                 </div>
+
             </div>
 
             <div class="social-media-container">
+
                 <figure class="reveal">
                     <!-- Instagram icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
@@ -246,6 +283,7 @@
                         <path fill="#fff" fill-rule="evenodd" d="M9.429 8.969h3.714v1.85c.535-1.064 1.907-2.02 3.968-2.02c3.951 0 4.889 2.118 4.889 6.004V22h-4v-6.312c0-2.213-.535-3.461-1.897-3.461c-1.889 0-2.674 1.345-2.674 3.46V22h-4zM2.57 21.83h4V8.799h-4zM7.143 4.55a2.53 2.53 0 0 1-.753 1.802a2.57 2.57 0 0 1-1.82.748a2.6 2.6 0 0 1-1.818-.747A2.55 2.55 0 0 1 2 4.55c0-.677.27-1.325.753-1.803A2.58 2.58 0 0 1 4.571 2c.682 0 1.336.269 1.819.747s.753 1.126.753 1.803" clip-rule="evenodd"/>
                     </svg>
                 </figure>
+
             </div>
 
             <p class="copyright-text">&copy; 2026 Muste. Todos los derechos reservados.</p>

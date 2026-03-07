@@ -2,13 +2,13 @@
     position: fixed;
     top: 120px; 
     left: 50%;
+    top: 8%;
     transform: translateX(-50%) scale(1);
     transition: all 0.4s ease;
     z-index: 1000;
     opacity: 0;
     animation: logoFade 0.8s ease forwards;
 }
-
 
 
 .logo-container img {
