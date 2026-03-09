@@ -99,7 +99,11 @@ footer .presentation {
     color: #fff;
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
 
     transform: translateY(10px);
     transition: all 0.3s ease;
@@ -133,6 +137,24 @@ footer .presentation {
 
     .mail-card:hover .email-overlay a {
         transform: translateY(0);
+    }
+
+    .email-overlay a svg {
+        transition: transform 0.25s ease;
+    }
+
+    .email-overlay a:hover svg {
+        transform: translateX(6px);
+        rotate: -10deg;
+    }
+
+    .social-media-container figure {
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .social-media-container figure:hover {
+        scale: 1.1;
     }
 }
 
