@@ -42,3 +42,16 @@
     transform: translateY(0);
   }
 }
+
+/*When the width of the screen is greater than or equal to 1440px (desktop size)*/
+@media (min-width: 1440px) {
+  
+  .logo-container img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .logo-container.scrolled {
+    top: -66px;
+  }
+}

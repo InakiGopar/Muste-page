@@ -3,8 +3,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
 }
 
 .about-section h2 {
@@ -15,11 +14,11 @@
 }
 
 .about-section p {
-    font-size: 1.2rem;
     color: var(--grey-color);
 }
 
 .about-section .presentation {
+    font-size: 1.1rem;
     font-weight: 700;
 }
 
@@ -41,6 +40,10 @@
     color: var(--main-color);
 }
 
+.about-section-card p {
+    font-size: 1rem;
+}
+
 .about-section-card svg {
     margin-top: 10px;
 }
@@ -53,6 +56,10 @@
     border: 1px solid var(--main-color);
 }
 
+.text-about {
+    font-size: 1.2rem;
+}
+
 
 /*When the width of the screen is greater than or equal to 768px (tablet size)*/
 @media (min-width: 768px) {
@@ -61,12 +68,20 @@
         font-size: 3rem;
     }
 
+    .about-section .presentation {
+        font-size: 1.4rem;
+    }
+
     .about-section-card h4 {
         font-size: 1.5rem;
     }
 
-    .about-section p {
-        font-size: 1.5rem;
+    .about-section-card p {
+        font-size: 1.2rem;
+    }
+    
+    .text-about {
+        font-size: 1.4rem;
     }
 
     .about-section-card svg {
@@ -78,8 +93,12 @@
 /*When the width of the screen is greater than or equal to 1024px (desktop size)*/
 @media (min-width: 1024px) {
 
-    .about-section {
-        height: 100vh;
+    .about-section h2 {
+    font-size: 4rem;
+    }
+
+    .about-section .presentation {
+        font-size: 1.3rem;
     }
 
     .about-section-cards-container {
@@ -92,8 +111,37 @@
         height: 250px;
     }
 
-    .about-section p {
+    .about-section-card p {
         font-size: 1.2rem;
+    }
+
+    .text-about {
+        font-size: 1.2rem;
+    }
+
+    .about-section-card:hover {
+         box-shadow: 0 10px 25px rgba(146, 12, 12, 0.25);
+    }
+
+    .text-about {
+        padding: 0 120px;
+    }
+}
+
+/*When the width of the screen is greater than or equal to 1440px (desktop size)*/
+@media (min-width: 1440px) {
+    
+    .about-section .presentation {
+        font-size: 2rem;
+    }
+
+    .about-section-card p {
+        font-size: 1.4rem;
+    }
+
+    .text-about {
+        font-size: 1.8rem;
+        padding: 0 200px;
     }
 }
 
