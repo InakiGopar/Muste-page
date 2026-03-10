@@ -33,6 +33,12 @@
     border: 1px solid transparent;
 }
 
+.about-section-card-inner {
+    background-color: var(--grey-light-color);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    height: 100%;
+}
+
 .about-section-card h4 {
     font-size: 25px;
     margin-top: 10px;
@@ -94,7 +100,7 @@
 @media (min-width: 1024px) {
 
     .about-section h2 {
-    font-size: 4rem;
+        font-size: 4rem;
     }
 
     .about-section .presentation {
@@ -120,7 +126,19 @@
     }
 
     .about-section-card:hover {
-         box-shadow: 0 10px 25px rgba(146, 12, 12, 0.25);
+        box-shadow: 0 10px 25px rgba(146, 12, 12, 0.25);
+    }
+
+    .about-section-card:hover .about-section-card-inner {
+        transform: translateY(-10px);
+    }
+
+    .about-section-card:hover .about-section-card-inner svg {
+        transition: all 0.3s ease;
+    }
+
+    .about-section-card:hover .about-section-card-inner svg {
+        transform: scale(1.2) rotate(5deg);
     }
 
     .text-about {
