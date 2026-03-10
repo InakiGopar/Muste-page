@@ -161,7 +161,7 @@
 
     .product-section-card:hover {
         transform: translateY(-8px); 
-        box-shadow: 0 20px 40px rgba(170, 4, 18, 0.411); 
+        box-shadow: 0 20px 40px rgba(170, 4, 18, 0.185); 
     }
 
     .product-section-card:hover .product-section-card-img-container img {

@@ -104,7 +104,7 @@ header.scrolled {
     }
 
     .desktop-menu li a:hover {
-        color: var(--red-color);
+        color: var(--orange-color);
         transition: color 0.3s ease;
     }
 
