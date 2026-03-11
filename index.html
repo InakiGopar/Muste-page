@@ -15,18 +15,19 @@
         <!-- CSS -->
         <link rel="stylesheet" href="./css/global.css">
         <link rel="stylesheet" href="./css/var.css">
-        <link rel="stylesheet" href="./css/header/header.css">
-        <link rel="stylesheet" href="./css/header/logo.css">
-        <link rel="stylesheet" href="./css/hero/hero.css">
-        <link rel="stylesheet" href="./css/about-section/about-section.css">
-        <link rel="stylesheet" href="./css/product-section/product-section.css">
-        <link rel="stylesheet" href="./css/footer/footer.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/logo.css">
+        <link rel="stylesheet" href="./css/hero.css">
+        <link rel="stylesheet" href="./css/about-section.css">
+        <link rel="stylesheet" href="./css/product-section.css">
+        <link rel="stylesheet" href="./css/footer.css">
         <link rel="stylesheet" href="./css/scroll-reveal.css">
 
         <title>Muste outdoor</title>
     </head>
     <body>
         <header id="id-header">
+            <!-- Hamburger menu icon -->
             <svg xmlns="http://www.w3.org/2000/svg" class="hamburger-menu-icon" viewBox="0 0 24 24">
                 <path fill="#fff" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/>
             </svg>
@@ -58,7 +59,7 @@
         </figure>
 
         <!--hero-->
-        <section class="hero-section">
+        <section id="inicio" class="hero-section">
 
                 <h2>
                     <span class="intro-text">Estudio de diseño</span>
@@ -76,7 +77,7 @@
 
                         <!--Button show products-->
                         <a class="hero-section-button products" href="#productos">
-                            Ver productos
+                            <span>Ver productos</span> 
                         </a>
             
                         <!--Button show contact-->
@@ -173,9 +174,9 @@
         </section>
 
         <!--products-->
-        <section class="products-section">
+        <section id="productos" class="products-section">
 
-            <h2 id="productos" class="reveal">Nuestros productos</h2>
+            <h2 class="reveal">Nuestros productos</h2>
 
             <p class="presentation reveal">
                 Diseños que transforman aventuras en experiencias inolvidables
@@ -288,7 +289,7 @@
                         <path fill="#B36B37" d="M13.413 11.413Q14 10.825 14 10t-.587-1.412T12 8t-1.412.588T10 10t.588 1.413T12 12t1.413-.587M12 19.35q3.05-2.8 4.525-5.087T18 10.2q0-2.725-1.737-4.462T12 4T7.738 5.738T6 10.2q0 1.775 1.475 4.063T12 19.35M12 22q-4.025-3.425-6.012-6.362T4 10.2q0-3.75 2.413-5.975T12 2t5.588 2.225T20 10.2q0 2.5-1.987 5.438T12 22m0-12"/>
                     </svg>
 
-                    <h4>Ubicaión</h4>
+                    <h4>Ubicación</h4>
                     <p>Tandil, Buenos Aires</p>
                 </div>
 
@@ -319,9 +320,11 @@
             
         </footer>
 
-
-        
+        <script src="./js/logo.js"></script>
         <script src="./js/header/header.js"></script>
+        <script src="./js/header/headerMobile.js"></script>
+        <script src="./js/header/headerDesktop.js"></script>
+        <script src="./js/heroAnimations.js"></script>
         <script src="./js/scrollReveal.js"></script>
     </body>
 </html>

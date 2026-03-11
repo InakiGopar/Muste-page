@@ -1,0 +1,90 @@
+.logo-container {
+    position: fixed;
+    left: 50%;
+    top: 8%;
+    transform: translateX(-50%) scale(0.2) rotate(-180deg);
+    transition: transform 0.8s ease, top 0.4s ease, left 0.4s ease;
+    z-index: 1000;
+    opacity: 0;
+    animation: logoIntro 1.3s ease forwards;
+}
+
+
+.logo-container img {
+    border-radius: 20px;
+    width: 160px;
+}
+
+.logo-container.scrolled {
+    animation: none;
+    top: -35px;
+    left: -40px;
+    transform: translateX(0) scale(0.3);
+    opacity: 1;
+}
+
+
+@keyframes logoIntro {
+
+ 0% {
+    opacity: 0;
+    transform: translateX(-50%) scale(0.2) rotate(-180deg);
+  }
+  60% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1.05) rotate(10deg);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-50%) scale(1) rotate(0deg);
+  }
+}
+
+@media (min-height: 1000px) {
+
+  .logo-container img {
+    height: 200px;
+    width: 200px;
+  }
+
+  .logo-container.scrolled {
+    top: -66px;
+  }
+}
+
+
+@media (min-width: 768px) {
+
+  .logo-container img {
+    height: 180px;
+    width: 180px;
+  }
+
+  .logo-container.scrolled {
+    top: -58px;
+  }
+}
+
+
+/*When the width of the screen is greater than or equal to 1440px (desktop size)*/
+@media (min-width: 1024px) {
+
+  .logo-container {
+        top: 4%;
+  }
+  
+  .logo-container img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .logo-container.scrolled {
+    top: -117px;
+    left: -90px;
+  }
+
+  .logo-container.scrolled {
+     transform: translateX(0) scale(0.2);
+  }
+}
+

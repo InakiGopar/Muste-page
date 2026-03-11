@@ -10,24 +10,35 @@
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 30px;
+  
 }
 
 .hero-section h2,
 .hero-section p,
-.hero-section-button-container {
+.hero-section-button-container, 
+.hero-section-arrow-container {
   opacity: 0;
 }
 
-.hero-section h2 {
+.hero-section-arrow-container {
+  margin-top: 30px;
+}
+
+
+.hero-section.active h2 {
   animation: fadeUp 0.8s ease forwards;
 }
 
-.hero-section p {
-  animation: fadeUp 0.8s ease 0.4s forwards;
+.hero-section.active p {
+  animation: fadeUp 0.8s ease 0.35s forwards;
 }
 
-.hero-section-button-container {
-  animation: fadeUp 0.8s ease 0.8s forwards;
+.hero-section.active .hero-section-button-container {
+  animation: fadeUp 0.8s ease 0.7s forwards;
+}
+
+.hero-section.active .hero-section-arrow-container {
+  animation: fadeUp 0.8s ease 1s forwards, bounce 2s infinite 1.8s;
 }
 
 .hero-section h2, p {
@@ -35,9 +46,8 @@
 }
 
 .hero-section h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-top: 250px;
-    margin-bottom: 20px;
 }
 
 
@@ -47,25 +57,16 @@
   white-space: nowrap;
   padding-right: 3px;
   animation:
-    typing 4s steps(30) forwards,
-    blink 0.8s infinite;
+    typing 2.2s steps(30) forwards,
+    blink 1s infinite;
 }
 
 @keyframes typing {
-
-  0% {
+  from {
     clip-path: inset(0 100% 0 0);
   }
 
-  40% {
-    clip-path: inset(0 0 0 0);
-  }
-
-  60% {
-    clip-path: inset(0 0 0 0);
-  }
-
-  100% {
+  to {
     clip-path: inset(0 0 0 0);
   }
 }
@@ -118,15 +119,9 @@
   border: 2px solid #fff;
 }
 
-.hero-section-arrow-container {
-  margin-top: 30px;
-  animation: bounce 2s infinite;
-}
-
 .hidden {
   display: none;
 }
-
 
 @keyframes bounce {
   0%, 100% {
@@ -141,7 +136,7 @@
 @keyframes fadeUp {
   from {
     opacity: 0;
-    transform: translateY(5px);
+    transform: translateY(20px);
   }
 
   to {
@@ -150,6 +145,30 @@
   }
 }
 
+@media (min-height: 1000px) {
+  .hero-section-bottom {
+    height: 400px;
+  }
+
+  .hero-section-button-container {
+    gap: 50px;
+  }
+
+  .hero-section-button {
+    width: 220px;
+    height: 90px;
+    font-size: 1.5em;
+  }
+
+  .hero-section-arrow-container {
+    margin-top: 60px;
+  }
+
+  .hero-section-arrow-container svg {
+    width: 70px;
+    height: 70px;
+  }
+}
 
 /* When the height of the screen is less than 700px or width is less than 384px (fix specific responsive problems) */
 @media ((max-height: 700px) or (max-width: 384px)) {
@@ -163,7 +182,7 @@
 @media (min-width: 768px) {
   
   .hero-section h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,8 +204,8 @@
   
   
   .hero-section h2 {
-    font-size: 3.5rem;
-    margin-top: 280px;
+    font-size: 2.5rem;
+    margin-top: 320px;
   }
 
   .hero-section p {
@@ -211,43 +230,36 @@
   .products {
     position: relative;
     overflow: hidden;
-    transition: transform 0.25s ease, box-shadow 0.25s ease;
+     transition: 
+      color 0.3s ease,
+      border-color 0.5s ease;
   }
 
   .products::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: -75%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(
-      120deg,
-      transparent,
-      rgba(255,255,255,0.6),
-      transparent
-    );
-    transform: skewX(-20deg);
+    inset: 0;
+    background: var(--main-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.35s ease;
+    z-index: 0;
   }
 
   .products:hover::before {
-    animation: shine 0.8s ease;
+    transform: scaleX(1);
+  }
+
+  .products span {
+    position: relative;
+    z-index: 1;
   }
 
   .products:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(255, 0, 0, 0.25);
+    border-color: var(--main-color);
   }
 
-  @keyframes shine {
-    0% {
-      left: -75%;
-    }
-    100% {
-      left: 125%;
-    }
-  }
-
+  
   .contact {
     position: relative;
     overflow: hidden;
