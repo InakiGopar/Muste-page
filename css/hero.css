@@ -300,7 +300,8 @@
 @media (min-width: 1440px) {
 
   .hero-section h2 {
-    font-size: 4rem;
+    font-size: 3rem;
+    margin-top: 450px;
   }
 
   .hero-section p {
