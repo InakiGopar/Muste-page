@@ -31,7 +31,7 @@ header.scrolled {
 
 .desktop-menu a {
     text-decoration: none;
-    color: white;
+    color: #fff;
     font-size: 1.2rem;
     position: relative;
 }
@@ -83,6 +83,27 @@ header.scrolled {
     transform: translateY(70px);
 }
 
+
+@media (min-width: 425px) {
+
+    header {
+        height: 80px;
+    }
+
+    .hamburger-menu-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    header {
+        height: 85px;
+    }
+}
+
 /*When the width of the screen is greater than or equal to 1024px (desktop size)*/
 @media (min-width: 1024px) {
 
@@ -108,5 +129,10 @@ header.scrolled {
         transition: color 0.3s ease;
     }
 
+    header {
+        height: 90px;
+    }
+
 }
+
 

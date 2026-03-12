@@ -47,11 +47,6 @@ footer .presentation {
     padding-bottom: 8px;
 }
 
-.footer-muste-icon {
-    background-image: url("/assets/logo-muste.png");
-    background-size: cover;
-    background-position: center;
-}
 
 .mail-card {
     position: relative;
@@ -95,7 +90,7 @@ footer .presentation {
     display: flex;
     justify-content: center;
     width: 100%;
-    gap: 30px;
+    gap: 40px;
 }
 
 .social-media-container figure {
@@ -109,6 +104,11 @@ footer .presentation {
     background-color: var(--main-color-darker);    
     transition: all 0.4s ease;
     z-index: 1;
+}
+
+figure.footer-muste-icon {
+    background-image: url("/assets/logo-muste-white.png");
+    background-size: cover;
 }
 
 .copyright-text {
@@ -150,6 +150,10 @@ footer .presentation {
         rotate: -20deg;
     }
 
+    .social-media-container {
+        align-items: center;
+    }
+
     .social-media-container figure {
         position: relative;
         overflow: hidden;
@@ -169,7 +173,7 @@ footer .presentation {
         z-index: -1; 
     }
 
-.social-media-container figure svg {
+    .social-media-container figure svg {
         position: relative;
         transition: all 0.4s ease;
         z-index: 2;
@@ -177,16 +181,16 @@ footer .presentation {
     }
 
 
-.social-media-container figure:hover {
+    .social-media-container figure:hover {
         transform: translateY(-5px); 
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     }
 
-.social-media-container figure:hover::before {
+    .social-media-container figure:hover::before {
         bottom: 0; 
     }
 
-.social-media-container figure:hover svg {
+    .social-media-container figure:hover svg {
         transform: rotate(360deg) scale(1.1); 
         fill: #fff; 
     }
@@ -198,6 +202,7 @@ footer .presentation {
 
 /*When the width of the screen is greater than or equal to 1440px (desktop size)*/
 @media (min-width: 1440px) {
+
     footer h3 {
         font-size: 4rem;
     }
@@ -216,8 +221,8 @@ footer .presentation {
     }
 
     .social-media-container figure {
-        height: 45px;
-        width: 45px;
+        height: 55px;
+        width: 55px;
     }
 
     .copyright-text {

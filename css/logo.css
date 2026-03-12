@@ -1,7 +1,7 @@
 .logo-container {
     position: fixed;
     left: 50%;
-    top: 8%;
+    top: 5%;
     transform: translateX(-50%) scale(0.2) rotate(-180deg);
     transition: transform 0.8s ease, top 0.4s ease, left 0.4s ease;
     z-index: 1000;
@@ -11,15 +11,14 @@
 
 
 .logo-container img {
-    border-radius: 20px;
-    width: 160px;
+    height: 220px;
 }
 
 .logo-container.scrolled {
     animation: none;
-    top: -35px;
-    left: -40px;
-    transform: translateX(0) scale(0.3);
+    top: -75px;
+    left: -70px;
+    transform: translateX(0) scale(0.2);
     opacity: 1;
 }
 
@@ -44,11 +43,23 @@
 
   .logo-container img {
     height: 200px;
-    width: 200px;
   }
 
   .logo-container.scrolled {
-    top: -66px;
+    top: -68px;
+  }
+}
+
+@media (min-width: 425px) {
+
+  .logo-container img {
+    height: 220px;
+    width: 220px;
+  }
+
+  .logo-container.scrolled {
+    top: -69px;
+    left: -65px;
   }
 }
 
@@ -56,12 +67,12 @@
 @media (min-width: 768px) {
 
   .logo-container img {
-    height: 180px;
-    width: 180px;
+    height: 250px;
+    width: 250px;
   }
 
   .logo-container.scrolled {
-    top: -58px;
+    top: -82px;
   }
 }
 
@@ -70,7 +81,7 @@
 @media (min-width: 1024px) {
 
   .logo-container {
-        top: 4%;
+    top: 4%;
   }
   
   .logo-container img {
@@ -79,12 +90,12 @@
   }
 
   .logo-container.scrolled {
-    top: -117px;
+    top: -105px;
     left: -90px;
   }
 
   .logo-container.scrolled {
-     transform: translateX(0) scale(0.2);
+    transform: scale(0.2);
   }
 }
 
@@ -102,12 +113,12 @@
   }
 
   .logo-container.scrolled {
-    top: -177px;
+    top: -165px;
     left: -130px;
   }
 
   .logo-container.scrolled {
-     transform: translateX(0) scale(0.14);
+    transform: scale(0.18);
   }
 }
 

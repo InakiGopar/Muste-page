@@ -5,12 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- head icon -->
-         <link rel="icon" href="./assets/logo-muste.png">
+         <link rel="icon" href="./assets/logo-muste-background-white.png">
 
         <!--Fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
         <!-- CSS -->
         <link rel="stylesheet" href="./css/global.css">
@@ -54,21 +58,21 @@
             </ul>
         </nav>
 
+        <!--Muste icon-->
         <figure class="logo-container">
-                <img src="./assets/logo-muste.png" alt="logo-muste" srcset="">
+                <img id="muste-icon-img" src="./assets/logo-muste.png" alt="logo-muste" srcset="">
         </figure>
 
         <!--hero-->
         <section id="inicio" class="hero-section">
 
                 <h2>
-                    <span class="intro-text">Estudio de diseño</span>
-                    <span class="typewriter">OUTDOOR</span>
+                    <span class="intro-text typewriter">Estudio de diseño</span>
                 </h2>
 
                 <p>
-                    Creamos productos inovadores que trasforman experiencias al aire libre,
-                    combinando funcionalidad, estética, durabilidad y diseño excepcional
+                    Resolvemos problemas ignorados del outdoor para que tu
+                    conexión con la naturaleza sea más simple y auténtica.
                 </p>
 
                 <div class="hero-section-bottom">
@@ -107,24 +111,6 @@
             <div class="about-section-cards-container">
 
                 <div class="about-section-card reveal">
-
-                    <div class="about-section-card-inner">
-
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                            <path fill="none" stroke="#5e2a2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 3l4 8l5-5l5 15H2z"/>
-                        </svg>
-
-                        <h4>Diseño funcional</h4>
-                        <p>
-                            Productos diseñados para resistir las condiciones más extremas sin comprometer el estilo
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="about-section-card reveal">
-
                     <div class="about-section-card-inner">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -140,24 +126,37 @@
                         </p>
 
                     </div>
-
                 </div>
 
                 <div class="about-section-card reveal">
+                    <div class="about-section-card-inner">
 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path fill="none" stroke="#5e2a2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8 3l4 8l5-5l5 15H2z"/>
+                        </svg>
+
+                        <h4>Diseño funcional</h4>
+                        <p>
+                            Diseñamos productos a partir de necesidades reales.
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="about-section-card reveal">
                      <div class="about-section-card-inner">
 
                         <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24">
                             <path fill="none" stroke="#5e2a2e" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 17h7l-4.5-6.5h3L12 3l-5.5 7.5h3L5 17zm0 0v4"/>
                         </svg>
 
-                        <h4>Sostenibilidad</h4>
+                        <h4>Conexión con la naturaleza</h4>
                         <p>
-                            Compromiso con materiales ecológicos y procesos de producción responsables
+                            Mejoramos la relación entre las personas y la naturaleza a través
+                            del diseño de objetos.
                         </p>
 
                      </div>
-
                 </div>
 
             </div>
@@ -165,10 +164,34 @@
             
 
             <p class="text-about reveal">
-                En Muste Outdoor, creemos que cada aventura merece equipamiento excepcional. Con más de 10 años de experiencia en diseño de productos outdoor,
-                hemos desarrollado soluciones innovadoras que combinan funcionalidad extrema con diseño atemporal.
-                Desde mochilas ergonómicas hasta equipamiento de camping de alta tecnología, cada producto que creamos
-                es el resultado de investigación exhaustiva, pruebas en condiciones reales y un compromiso inquebrantable con la calidad y la sostenibilidad.
+                En <span class="muste">MUSTE</span> creemos que cada experiencia en la naturaleza puede ser mejor.
+                Por eso diseñamos objetos para quienes viven, trabajan o
+                descansan al aire libre.
+            </p>
+
+            <h4 class="reveal about-subtitle">Mision</h4>
+
+            <p class="text-about reveal">
+                Nuestra mision en ofrecer productos economicos, funcionales e ingeniosos que resuelvan problemas ignorados en las
+                actividades conectadas con el aire libre.
+            </p>
+
+            <h4 class="reveal about-subtitle">Propósito</h4>
+
+            <p class="text-about reveal">
+                El propósito de Muste es facilitar y enriquecer la conexión entre las personas y la naturaleza a través de productos innovadores,
+                accesibles y diseñados con cuidado. Buscamos empoderar a nuestros usuarios, ofreciéndoles herramientas que los acompañen en
+                sus aventuras al aire libre, sin importar su experiencia previa. Nuestra misión es inspirar una vida más cercana al entorno natural,
+                promoviendo el respeto, el disfrute y la exploración responsable del mundo que nos rodea.
+            </p>
+
+            <h4 class="reveal about-subtitle">Filosofía</h4>
+
+            <p class="text-about reveal">
+               Creemos que la naturaleza está al alcance de todos. Nuestra filosofía se basa en la conexión genuina con el entorno,
+               desafiando la idea de que aventurarse es solo para expertos. Diseñamos productos funcionales y accesibles para que cualquier persona,
+               sin importar su experiencia, pueda disfrutar de la emoción de explorar. Queremos demostrar que cada paso en la montaña, cada campamento,
+               y cada momento al aire libre es una oportunidad para descubrir, crecer y conectar con lo esencial: la naturaleza y uno mismo.
             </p>
             
         </section>

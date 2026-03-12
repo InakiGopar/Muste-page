@@ -62,6 +62,20 @@
     border: 1px solid var(--main-color);
 }
 
+.about-subtitle {
+    margin-top: 80px;
+    margin-bottom: 5px;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+.text-about .muste {
+    font-family: 'Lobster';
+    font-weight: bolder;
+    font-size: 1.6rem;
+    color: var(--main-color);
+}
+
 .text-about {
     font-size: 1.2rem;
 }
@@ -85,6 +99,10 @@
     .about-section-card p {
         font-size: 1.2rem;
     }
+
+    .about-subtitle {
+        font-size: 2.3rem;
+    }
     
     .text-about {
         font-size: 1.4rem;
@@ -93,6 +111,11 @@
     .about-section-card svg {
         width: 40px;
         height: 40px;
+    }
+
+    .about-section-cards-container .about-section-card:last-child svg {
+        width: 50px;
+        height: 50px;
     }
 }
 
@@ -141,6 +164,11 @@
         transform: scale(1.2) rotate(5deg);
     }
 
+    .about-subtitle {
+        font-size: 2.4rem;
+        margin-top: 100px;
+    }
+
     .text-about {
         padding: 0 120px;
     }
@@ -155,6 +183,12 @@
 
     .about-section-card p {
         font-size: 1.4rem;
+    }
+
+
+    .about-subtitle {
+        font-size: 2.6rem;
+        margin-top: 150px;
     }
 
     .text-about {
