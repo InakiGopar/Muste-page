@@ -12,10 +12,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
-
         <!-- CSS -->
         <link rel="stylesheet" href="./css/global.css">
         <link rel="stylesheet" href="./css/var.css">
@@ -24,6 +20,7 @@
         <link rel="stylesheet" href="./css/hero.css">
         <link rel="stylesheet" href="./css/about-section.css">
         <link rel="stylesheet" href="./css/product-section.css">
+        <link rel="stylesheet" href="./css/plan-section.css">
         <link rel="stylesheet" href="./css/footer.css">
         <link rel="stylesheet" href="./css/scroll-reveal.css">
 
@@ -33,7 +30,8 @@
         <header id="id-header">
             <!-- Hamburger menu icon -->
             <svg xmlns="http://www.w3.org/2000/svg" class="hamburger-menu-icon" viewBox="0 0 24 24">
-                <path fill="#fff" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/>
+                <path id="hamburger-menu" fill="#fff" d="M4 18q-.425 0-.712-.288T3 17t.288-.712T4 16h16q.425 0 .713.288T21 17t-.288.713T20 18zm0-5q-.425 0-.712-.288T3 12t.288-.712T4 11h16q.425 0 .713.288T21 12t-.288.713T20 13zm0-5q-.425 0-.712-.288T3 7t.288-.712T4 6h16q.425 0 .713.288T21 7t-.288.713T20 8z"/>
+                <path id="hamburger-menu-cross" class="hidden"  fill="#fff" d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"/>
             </svg>
              <!-- Desktop menu -->
             <nav class="desktop-menu">
@@ -108,6 +106,37 @@
 
             <p class="presentation reveal">Un estudio dedicado a revolucionar la experiencia outdoor</p>
 
+            <p class="text-about reveal">
+                En <span class="muste">MUSTE</span> creemos que cada experiencia en la naturaleza puede ser mejor.
+                Por eso diseñamos objetos para quienes viven, trabajan o
+                descansan al aire libre.
+            </p>
+
+            <h4 class="reveal about-subtitle">Misión</h4>
+
+            <p class="text-about reveal">
+                Nuestra mision en ofrecer productos economicos, funcionales e ingeniosos que resuelvan problemas ignorados en las
+                actividades conectadas con el aire libre.
+            </p>
+
+            <h4 class="reveal about-subtitle">Propósito</h4>
+
+            <p class="text-about reveal">
+                El propósito de Muste es facilitar y enriquecer la conexión entre las personas y la naturaleza a través de productos innovadores,
+                accesibles y diseñados con cuidado. Buscamos empoderar a nuestros usuarios, ofreciéndoles herramientas que los acompañen en
+                sus aventuras al aire libre, sin importar su experiencia previa. Nuestra misión es inspirar una vida más cercana al entorno natural,
+                promoviendo el respeto, el disfrute y la exploración responsable del mundo que nos rodea.
+            </p>
+
+            <h4 class="reveal about-subtitle">Filosofía</h4>
+
+            <p class="text-about reveal">
+               Creemos que la naturaleza está al alcance de todos. Nuestra filosofía se basa en la conexión genuina con el entorno,
+               desafiando la idea de que aventurarse es solo para expertos. Diseñamos productos funcionales y accesibles para que cualquier persona,
+               sin importar su experiencia, pueda disfrutar de la emoción de explorar. Queremos demostrar que cada paso en la montaña, cada campamento,
+               y cada momento al aire libre es una oportunidad para descubrir, crecer y conectar con lo esencial: la naturaleza y uno mismo.
+            </p>
+
             <div class="about-section-cards-container">
 
                 <div class="about-section-card reveal">
@@ -160,39 +189,6 @@
                 </div>
 
             </div>
-
-            
-
-            <p class="text-about reveal">
-                En <span class="muste">MUSTE</span> creemos que cada experiencia en la naturaleza puede ser mejor.
-                Por eso diseñamos objetos para quienes viven, trabajan o
-                descansan al aire libre.
-            </p>
-
-            <h4 class="reveal about-subtitle">Mision</h4>
-
-            <p class="text-about reveal">
-                Nuestra mision en ofrecer productos economicos, funcionales e ingeniosos que resuelvan problemas ignorados en las
-                actividades conectadas con el aire libre.
-            </p>
-
-            <h4 class="reveal about-subtitle">Propósito</h4>
-
-            <p class="text-about reveal">
-                El propósito de Muste es facilitar y enriquecer la conexión entre las personas y la naturaleza a través de productos innovadores,
-                accesibles y diseñados con cuidado. Buscamos empoderar a nuestros usuarios, ofreciéndoles herramientas que los acompañen en
-                sus aventuras al aire libre, sin importar su experiencia previa. Nuestra misión es inspirar una vida más cercana al entorno natural,
-                promoviendo el respeto, el disfrute y la exploración responsable del mundo que nos rodea.
-            </p>
-
-            <h4 class="reveal about-subtitle">Filosofía</h4>
-
-            <p class="text-about reveal">
-               Creemos que la naturaleza está al alcance de todos. Nuestra filosofía se basa en la conexión genuina con el entorno,
-               desafiando la idea de que aventurarse es solo para expertos. Diseñamos productos funcionales y accesibles para que cualquier persona,
-               sin importar su experiencia, pueda disfrutar de la emoción de explorar. Queremos demostrar que cada paso en la montaña, cada campamento,
-               y cada momento al aire libre es una oportunidad para descubrir, crecer y conectar con lo esencial: la naturaleza y uno mismo.
-            </p>
             
         </section>
 
@@ -267,6 +263,115 @@
                 </div>
 
             </div>
+        </section>
+
+        <!--Service-->
+        <section id="servicio" class="service-section">
+            <h2 class="reveal">Servicios</h2>
+
+            <div class="plans-container">
+
+                <div class="plan-card reveal-container">
+
+                    <div class="plan-card-top">
+
+                        <div class="plan-card-top-header">
+                            <figure></figure>
+                            <h4>Exploración</h4>
+                        </div>
+                        
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="plan-card-content">
+                        
+                        <p class="hook">
+                            "Tengo una idea, no se si funciona"
+                        </p>
+
+                        <a href="#contacto">Ver más</a>
+
+                    </div>
+
+                </div>
+
+                <div class="plan-card reveal-container">
+
+                    <div class="plan-card-top">
+
+                        <div class="plan-card-top-header">
+                             <figure></figure>
+                            <h4>Diseño base</h4>
+                        </div>
+                       
+                        <div class="line"></div>
+
+                    </div>
+
+                    <div class="plan-card-content">
+                        
+                        <p class="hook">
+                            "Necesito el producto diseñado"
+                        </p>
+
+                        <a href="#contacto">Ver más</a>
+
+                    </div>
+
+                </div>
+
+                <div class="plan-card reveal-container">
+
+                    <div class="plan-card-top">
+
+                        <div class="plan-card-top-header">
+                            <figure></figure>
+                            <h4>Diseño + prototipo</h4>
+                        </div>
+                        
+                        <div class="line"></div>
+
+                    </div>
+
+                    <div class="plan-card-content">
+                        
+                        <p class="hook">
+                            "Quiero verlo y probarlo"
+                        </p>
+
+                       <a href="#contacto">Ver más</a>
+
+                    </div>
+
+                </div>
+
+                <div class="plan-card reveal-container">
+
+                    <div class="plan-card-top">
+
+                        <div class="plan-card-top-header">
+                            <figure></figure>
+
+                            <h4>Optimización</h4>
+                        </div>
+                       
+                        <div class="line"></div>
+                    </div>
+
+                    <div class="plan-card-content">
+                        
+                        <p class="hook">
+                            "Ya tengo algo, quiero mejorarlo"
+                        </p>
+
+                        <a href="#contacto">Ver más</a>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+
         </section>
 
         <footer>

@@ -1,7 +1,9 @@
 :root {
     --main-color: #5e2a2e;
     --main-color-darker: #4A2226;
-    --main-color-hover: #32070A;
+    --main-color-card-plan-content: #5e2a2ed2;
+    --main-color-hover: #4B171B;
+    --main-color-box-shadow: #6111189f;
 
     --red-color: #DE373D;
 

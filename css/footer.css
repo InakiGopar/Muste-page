@@ -28,6 +28,7 @@ footer .presentation {
     align-items: center;
     width: 100%;
     gap: 30px;
+    margin-bottom: 30px;
 }
 
 .means-of-contact-container div {
@@ -107,7 +108,7 @@ footer .presentation {
 }
 
 figure.footer-muste-icon {
-    background-image: url("/assets/logo-muste-white.png");
+    background-image: url("../assets/logo-muste-white.png");
     background-size: cover;
 }
 
