@@ -13,6 +13,8 @@ window.addEventListener("scroll", () => {
     } else {
         hamburgerMenu.classList.remove("scrolled");
         mobileMenu.classList.remove("open");
+        hamburgerIcon.classList.remove("hidden");
+        hamburgerIconCross.classList.add("hidden");
     }
 });
 

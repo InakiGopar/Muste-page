@@ -108,8 +108,13 @@ footer .presentation {
 }
 
 figure.footer-muste-icon {
-    background-image: url("../assets/logo-muste-white.png");
-    background-size: cover;
+    background-image: url("../assets/muste-white-without-letters.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
 }
 
 .copyright-text {
@@ -187,7 +192,7 @@ figure.footer-muste-icon {
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     }
 
-    .social-media-container figure:hover::before {
+    .social-media-container figure:not(.footer-muste-icon):hover::before {
         bottom: 0; 
     }
 
@@ -199,6 +204,13 @@ figure.footer-muste-icon {
     .social-media-container figure:hover {
         scale: 1.1;
     }
+
+    figure.footer-muste-icon {
+        cursor: none;
+        width: 80px;
+        height: 80px;
+    }
+
 }
 
 /*When the width of the screen is greater than or equal to 1440px (desktop size)*/
@@ -224,6 +236,11 @@ figure.footer-muste-icon {
     .social-media-container figure {
         height: 55px;
         width: 55px;
+    }
+
+       figure.footer-muste-icon {
+        width: 100px;
+        height: 100px;
     }
 
     .copyright-text {

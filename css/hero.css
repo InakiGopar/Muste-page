@@ -1,7 +1,8 @@
 .hero-section {
-  background-image: linear-gradient(#5e2a2e81), url('../assets/muste-image1.webp');
+
+  position: relative;
+  overflow: hidden;
   height: 100vh;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,6 +12,29 @@
   padding-right: 10px;
   padding-bottom: 30px;
   
+}
+
+.hero-bg-img {
+  position: absolute;
+  inset: 0;
+  background-position: 65%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: opacity 1.5s ease;
+}
+
+.bg1 {
+  background-image: linear-gradient(#97454b6b), url('../assets/muste-hero-img0.jpg');
+  opacity: 1;
+}
+
+.bg2 {
+  opacity: 0;
+}
+
+.hero.content {
+  position: relative;
+  z-index: 2;
 }
 
 .hero-section h2,
@@ -38,10 +62,11 @@
 }
 
 .hero-section.active .hero-section-arrow-container {
-  animation: fadeUp 0.8s ease 1s forwards, bounce 2s infinite 1.8s;
+  animation: fadeUp 0.8s ease 1s forwards, bounce 2s infinite 1s;
 }
 
-.hero-section h2, p {
+.hero-section h2,
+.hero-section p {
     color: #fff;
 }
 
@@ -229,6 +254,7 @@
   }
 
   .hero-section-button-container {
+    justify-content: center;
     flex-direction: row;
     gap: 60px;
   }
@@ -287,7 +313,7 @@
     transform-origin: center;
     transition: transform 0.35s ease;
     z-index: 0;
-}
+  }
 
   .contact:hover::before {
     transform: scaleX(1);
@@ -314,6 +340,11 @@
 
 /*When the width of the screen is greater than or equal to 1440px (desktop size)*/
 @media (min-width: 1440px) {
+
+  .hero-bg-img {
+      background-position: center;
+
+  }
 
   .hero-section h2 {
     font-size: 3rem;

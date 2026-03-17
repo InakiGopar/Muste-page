@@ -99,7 +99,7 @@
     font-size: x-small;
     font-weight: 700;
     color: #fff;
-    background-color: var(--main-color);
+    background-color: rgba(97, 14, 14, 0.78);
     padding: 2%;
     border-radius: 10px;
 }
