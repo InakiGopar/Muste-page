@@ -1,9 +1,9 @@
 const images = [
-  "../assets/muste-hero-img0.jpg",
-  "../assets/muste-hero-img1.jpg",
-  "../assets/muste-hero-img2.jpg",
-  "../assets/muste-hero-img3.jpg",
-  "../assets/muste-hero-img4.jpg",
+  "assets/muste-hero-img0.jpg",
+  "assets/muste-hero-img1.jpg",
+  "assets/muste-hero-img2.jpg",
+  "assets/muste-hero-img3.jpg",
+  "assets/muste-hero-img4.jpg",
 ];
 
 let index = 0;

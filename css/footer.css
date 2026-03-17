@@ -49,12 +49,12 @@ footer .presentation {
 }
 
 
-.mail-card {
+.send-card {
     position: relative;
     overflow: hidden;
 }
 
-.email-overlay {
+.contact-overlay {
     position: absolute;
     inset: 0;
 
@@ -69,7 +69,7 @@ footer .presentation {
     transition: opacity 0.35s ease;
 }
 
-.email-overlay a {
+.contact-overlay a {
     padding: 12px 22px;
     border-radius: 30px;
     background-color: #B36B37;
@@ -139,19 +139,19 @@ figure.footer-muste-icon {
         padding: 3%;
     }
 
-    .mail-card:hover .email-overlay {
+    .send-card:hover .contact-overlay {
         opacity: 1;
     }
 
-    .mail-card:hover .email-overlay a {
+    .send-card:hover .contact-overlay a {
         transform: translateY(0);
     }
 
-    .email-overlay a svg {
+    .contact-overlay a svg {
         transition: transform 0.25s ease;
     }
 
-    .email-overlay a:hover svg {
+    .contact-overlay a:hover svg {
         transform: translateX(6px);
         rotate: -20deg;
     }

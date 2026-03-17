@@ -29,11 +29,11 @@
     }
 
     .product-section-card:nth-of-type(2) {
-    transition-delay: 0.3s;
+    transition-delay: 0.2s;
     }
 
     .product-section-card:nth-of-type(3) {
-        transition-delay: 0.5s;
+        transition-delay: 0.3s;
     }
 }
 
@@ -46,11 +46,11 @@
     }
 
     .about-section-card:nth-child(2) {
-        transition-delay: 0.3s;
+        transition-delay: 0.2s;
     }
 
     .about-section-card:nth-child(3) {
-        transition-delay: 0.5s;
+        transition-delay: 0.3s;
     }
 
     .plan-card:nth-child(1) {
@@ -73,10 +73,10 @@
         transition-delay: 0.1s;
     }
     .means-of-contact-container div:nth-child(2) {
-        transition-delay: 0.3s;
+        transition-delay: 0.2s;
     }
     .means-of-contact-container div:nth-child(3) {
-        transition-delay: 0.5s;
+        transition-delay: 0.3s;
     }
 
 }

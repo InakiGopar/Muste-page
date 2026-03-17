@@ -99,10 +99,14 @@
 }
 
 .plan-card-content a {
-    color: var(--orange-color);
+    background-color: var(--orange-color);
+    color: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     font-weight: 700;
     text-decoration:underline;
     margin-top: 40px;
+    padding: 6px 14px;
+    border-radius: 20px;
 }
 
 
@@ -165,6 +169,13 @@
 
     .plan-card-content a {
         font-size: 1.3rem;
+        transition: all 0.3s ease;
+    }
+
+    .plan-card-content a:hover {
+        transform: translateY(-3px) scale(1.05);
+        box-shadow: 0 0 10px var(--orange-color),
+                    0 0 20px var(--orange-color);
     }
 }
 
