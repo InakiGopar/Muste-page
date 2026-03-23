@@ -12,3 +12,10 @@ window.addEventListener("scroll", () => {
         logoImage.src = "assets/logo-muste.png";
     }
 });
+
+logo.addEventListener("click", ()=> {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});

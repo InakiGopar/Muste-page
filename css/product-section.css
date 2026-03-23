@@ -104,7 +104,6 @@
     border-radius: 10px;
 }
 
-
 /*When the width of the screen is greater than or equal to 768px (tablet size)*/
 @media (min-width: 768px) {
 
@@ -121,8 +120,6 @@
         justify-content: center;
         flex-wrap: wrap;
     }
-
-
 }
 
 /*When the width of the screen is greater than or equal to 1024px (desktop size)*/
@@ -136,6 +133,7 @@
     .product-section-card {
         max-width: 350px;
         height: 550px;
+        cursor: pointer;
     }
 
     .product-section-card-img-container {

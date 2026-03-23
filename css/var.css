@@ -1,5 +1,6 @@
 :root {
     --main-color: #5e2a2e;
+    --main-color-hero-img: #552c2f6e;
     --main-color-darker: #4A2226;
     --main-color-card-plan-content: #5e2a2ed2;
     --main-color-hover: #4B171B;
@@ -8,8 +9,9 @@
     --red-color: #DE373D;
 
     --grey-color: #4A5565;
+    --grey-color-light: #7e8288;
+    --grey-light-color: #F9FAFB;
 
     --orange-color: #B36B37;
     
-    --grey-light-color: #F9FAFB;
 }

@@ -18,11 +18,11 @@ setInterval(() => {
   index = (index + 1) % images.length;
 
   if (showingFirst) {
-    bg2.style.backgroundImage = `linear-gradient(#552c2f6e), url(${images[index]})`;
+    bg2.src = images[index];
     bg2.style.opacity = 1;
     bg1.style.opacity = 0;
   } else {
-    bg1.style.backgroundImage = `linear-gradient(#552c2f6e), url(${images[index]})`;
+    bg1.src = images[index];
     bg1.style.opacity = 1;
     bg2.style.opacity = 0;
   }

@@ -1,0 +1,214 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0, 0, 0, 0.4);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    width: 95%;
+    height: 85%;
+    border-radius: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.popup-close-btn {
+    background-color: transparent;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.popup-content h2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: var(--main-color);
+    font-size: 1.7rem;
+}
+
+.popup-content p {
+    margin-top: 15px;
+    padding: 0 15px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+}
+
+#popup-main-img {
+    width: 100%;
+    height: 250px;
+    object-fit:contain;
+    object-position: center;
+    display: block;
+    border-radius: 10px;
+}
+
+.carousel-dots {
+    display: flex;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.carousel-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ccc;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.carousel-dot.active {
+    background: var(--main-color);
+    transform: scale(1.3);
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    background: var(--main-color);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.carousel-btn.left {
+    left: 85px;
+}
+
+.carousel-btn.right {
+    right: 85px;
+}
+
+
+
+@media ((max-height: 600px)) {
+
+}
+
+
+@media (min-width: 768px) {
+
+    .popup-content {
+        width: 85%;
+        height: 95%;
+    }
+
+    .popup-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .popup-content p {
+        font-size: 1.2rem;
+    }
+
+    #popup-main-img {
+        width: 70%;
+        height: 300px;
+    }
+
+}
+
+
+@media (min-width: 1024px) {
+
+    .carousel-dots div {
+        cursor: pointer;
+    }
+
+    .popup-content {
+        width: 55%;
+        height: 95%;
+    }
+
+    .popup-content h2 {
+        font-size: 3rem;
+    }
+
+    #popup-main-img {
+        width: 80%;
+    }
+
+    .carousel-btn {
+        display: flex;
+    }
+
+    .carousel-btn.left {
+        left: 35px;
+    }
+
+    .carousel-btn.right {
+        right: 35px;
+    }
+
+    .move-left {
+        transform: translateX(-3px);
+    }
+
+    .move-right {
+        transform: translateX(3px);
+    }
+}
+
+
+@media (min-width: 1440px) {
+
+    .popup-content {
+        width: 40%;
+    }
+
+    #popup-main-img {
+        height: 350px;
+    }
+
+}
